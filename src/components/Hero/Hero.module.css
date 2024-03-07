@@ -1,0 +1,76 @@
+.hero_wrapper {
+  height: 500px;
+  overflow: hidden;
+
+  & .container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    & .hero_content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 115px;
+
+      & .text_1 {
+        font-size: 32px;
+      }
+      & .text_2 {
+        font-size: 64px;
+        font-weight: bold;
+        color: #3B1BBD;
+      }
+      & .text_3 {
+        font-size: 32px;
+      }
+      & .text_4 {
+        font-size: 16px;
+        margin-top: 25px;
+      }
+
+      & .hero_social {
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+
+        & li {
+          margin-right: 10px;
+
+          & svg {
+            width: 32px;
+            height: 32px;
+            color: #f0e68c;
+          }
+        }
+      }
+
+      & .hero_image {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-image: url("https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/313329383_5562528333829044_5934916987351130949_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGELNY6XK-TVFVxSsQOt-Db-i8_hR_Lq-j6Lz-FH8ur6AIWOClIROBj1QvBYzFUNkvPf32TnybYFyo-p3cq3dPU&_nc_ohc=_OeQM71lZjYAX9HOgG9&_nc_ht=scontent.fcnx1-1.fna&oh=00_AfARY9c2Lnz2i8c6nJ91BLPlMcw81ZYuIFxErItAIAdwJQ&oe=65EEB2B5");
+        background-size: cover;
+        background-position: center;
+        margin-right: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero_wrapper {
+    height: auto;
+
+    & .hero_content {
+      flex-direction: column;
+      margin: 50px 0;
+      padding: 20px;
+
+      & .hero_info, & .hero_image {
+        width: 100%;
+      }
+
+    }
+
+   
+  }
+}
